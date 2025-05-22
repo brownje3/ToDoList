@@ -1,5 +1,7 @@
 # ToDoList
 
+First and Final Project for 5/19/2025 Angular Refresh Cohort
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.12.
 
 ## Development server
