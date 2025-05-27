@@ -1,0 +1,17 @@
+<span mat-dialog-title>To Do Entry</span>
+<mat-dialog-content>
+    <mat-form-field >
+        <mat-label>Entry Title</mat-label>
+        <input matInput minlength="1" type="text"[(ngModel)]="newItem.name"/>
+    </mat-form-field>
+
+    <mat-form-field style="width: auto;">
+        <mat-label>Entry Description</mat-label>
+        <!-- <input matInput minlength="1" type="text" [(ngModel)]="newItem.description"/> -->
+        <textarea matInput minlength="1" [(ngModel)]="newItem.description"></textarea>
+    </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-button (click)="closeClick()">No Thanks</button>
+    <button mat-raised-button (click)="submit()">Submit</button>
+</mat-dialog-actions>

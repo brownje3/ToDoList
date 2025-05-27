@@ -1,0 +1,17 @@
+<div class="m-4">
+    <div *ngIf="serv.items.length == 0">
+        <div class="h5">There are no To Do entries</div>
+        <button (click)="open()">
+            New Item
+        </button>
+    </div>
+
+    <div>
+        <h5 *ngIf="serv.items.length == 1">
+            You have {{ serv.items.length }} item on your To Do list
+        </h5>
+        <h5 *ngIf="serv.items.length > 1">
+            You have {{ serv.items.length }} items on your To Do list
+        </h5>
+    </div>
+</div>
